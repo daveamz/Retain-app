@@ -5,23 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "webpack --config webpack.spec.ts --progress --color && karma start",
-    "start": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src"
+    "start": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
+    "api": "angularclass-server --api retain --port 3500"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@angular/common": "^2.0.0",
-    "@angular/compiler": "^2.0.0",
-    "@angular/core": "^2.0.0",
-    "@angular/forms": "^2.0.0",
-    "@angular/http": "^2.0.0",
-    "@angular/platform-browser": "^2.0.0",
-    "@angular/platform-browser-dynamic": "^2.0.0",
-    "@angular/router": "^3.0.0",
+    "@angular/common": "^2.4.5",
+    "@angular/compiler": "^2.4.5",
+    "@angular/core": "^2.4.5",
+    "@angular/forms": "^2.4.5",
+    "@angular/http": "^2.4.5",
+    "@angular/platform-browser": "^2.4.5",
+    "@angular/platform-browser-dynamic": "^2.4.5",
+    "@angular/router": "^3.4.5",
+    "@angularclass/api": "^2.5.6",
     "core-js": "^2.4.1",
     "lodash": "^4.16.1",
-    "rxjs": "5.0.0-rc.4",
-    "zone.js": "^0.7.2"
+    "rxjs": "^5.0.3",
+    "zone.js": "^0.7.6"
   },
   "devDependencies": {
     "@types/core-js": "^0.9.33",
